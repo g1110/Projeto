@@ -1,5 +1,7 @@
 # Projeto
 projeto
+
+
 print('BEM VINDO AO CADASTRO DE PESSOAS DE BAIXA RENDA URBANA E RURAL')
 print('DIGITE UM NUMERO:')
 while True:
