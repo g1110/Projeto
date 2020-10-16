@@ -11,21 +11,24 @@ while True:
             per = input('Digite seu nome e sobrenome')
             perg = int(input('Digite o cep da sua rua ou cidade de sua residencia'))
             pergun = int(input('digite seu CPF'))
-
+            pergunt = float(input('Digite sua renda'))
+            pergunta = int(input('Data do cadastro'))
 
         per = input('Digite seu nome e sobrenome')
         perg = int(input('Digite o cep da sua rua ou cidade de sua residencia'))
         pergun = int(input('digite seu CPF'))
         pergunt = float(input('Digite sua renda'))
+        pergunta=int(input('Data do cadastro'))
         arquivo = open('usuarios txt', 'a')
         arquivo.write(per + '#')
         arquivo.write(str(perg) + '#')
         arquivo.write(str(pergunt) + '#')
         arquivo.write(str(pergun) + '\n')
+        arquivo.write(str(perg) + '#')
         print('----------------------------------------')
         arquivo.close()
         print('Cadastro realizado com sucesso')
-        print('Obrigado por usar o sistema interacional')
+        print('OBRIGADO POR  USAR O SISTEMA DE CADASTRO DE PESSOAS DE BAIXA RENDA URBANA E RURAL')
     elif p == 2:
         arquivo = open("usuarios txt", "r")
         for linha in arquivo:
@@ -54,18 +57,19 @@ while True:
                 else:
                     print('Você não digitou uma opção aceitavel. Tente novamente')
             elif a == 2:
-                f1 = float(input('Digite um numero'))
-                f2 = float(input('Digite outro numero'))
-                f3 = f1 - f2
-                print('O primeiro numero que voce digitou foi: {} e o segundo é: {}, a soma dos dois é {}'.format(f1, f2, f3))
-                f4 = str(input('Quer continuar ? s / n'))
-                if f4 == 's':
-                    print('OK')
-                elif f4 == 'n':
-                    print('OBRIGADO POR USAR O NOSSO SISTEMA')
-                    break
-                else:
-                    print('Você não digitou uma opção aceitavel. Tente novamente')
+                while True:
+                    f1 = float(input('Digite um numero'))
+                    f2 = float(input('Digite outro numero'))
+                    f3 = f1 - f2
+                    print('O primeiro numero que voce digitou foi: {} e o segundo é: {}, a soma dos dois é {}'.format(f1, f2, f3))
+                    f4 = str(input('Quer continuar ? s / n'))
+                    if f4 == 's':
+                        print('OK')
+                    elif f4 == 'n':
+                        print('OBRIGADO POR USAR O NOSSO SISTEMA')
+                        break
+                    else:
+                        print('Você não digitou uma opção aceitavel. Tente novamente')
             elif a == 3:
                 multiplicador = 1
                 while True:
@@ -88,7 +92,7 @@ while True:
                     c1 = float(input('Digite um numero'))
                     c2 = float(input('Digite outro numero'))
                     c3 = c1 / c2
-                    print('O primeiro numero que voce digitou foi: {} e o segundo é: {}, a soma dos dois é {}'.format(c1, c2, c3))
+                    print('O primeiro numero que voce digitou foi: {} e o segundo é: {}, a divisão dos dois é {}'.format(c1, c2, c3))
                     c4 = str(input('Quer continuar ? s / n'))
                     if c4 == 's':
                         print('OK')
