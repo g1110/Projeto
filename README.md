@@ -1,11 +1,10 @@
 # Projeto
 projeto
 
-
 print('BEM VINDO AO CADASTRO DE PESSOAS DE BAIXA RENDA URBANA E RURAL')
 print('DIGITE UM NUMERO:')
 while True:
-    p = int(input('1- Cadastro     2- Analise      3- Contatos     4- outros'))
+    p = int(input('1- Cadastro     2- Analise      3- outros'))
     if p == 1:
         def caduser():
             per = input('Digite seu nome e sobrenome')
@@ -35,7 +34,7 @@ while True:
             valores = linha.split()
             print(linha)
         arquivo.close()
-    elif p == 4:
+    elif p == 3:
         a = int(input('1- Calculadora  2- Telenofe'))
         if a == 1:
             a = int(input('1- Adição   2- Subtração    3-Multiplicação     4-Divisão       5-Fatorial   6- Numero primo ou não primo'))
